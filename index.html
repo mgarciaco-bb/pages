@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mudra Link | Dispositivo de Interacción Neuronal</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased min-h-screen flex flex-col justify-between">
+
+    
+    <header class="sticky top-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-cyan-400 animate-pulse"></span>
+                <span class="font-bold text-xl tracking-wider text-slate-100">MUDRA<span class="text-cyan-400">LINK</span></span>
+            </div>
+            <nav class="hidden md:flex gap-8 text-sm text-slate-300 font-medium">
+                <a href="#inicio" class="hover:text-cyan-400 transition-colors">Inicio</a>
+                <a href="#galeria" class="hover:text-cyan-400 transition-colors">Galería</a>
+                <a href="#beneficios" class="hover:text-cyan-400 transition-colors">Beneficios</a>
+                <a href="#evolucion" class="hover:text-cyan-400 transition-colors">Evolución</a>
+            </nav>
+            <a href="https://www.mudra-band.com" target="_blank" rel="noopener noreferrer" class="px-5 py-2 text-xs font-bold rounded-lg bg-cyan-500 hover:bg-cyan-400 text-slate-950 transition-all shadow-md shadow-cyan-500/20">
+                Web Oficial
+            </a>
+        </div>
+    </header>
+
+    
+    <section id="inicio" class="py-16 px-4 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+        <div class="flex-1 space-y-6">
+            <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-cyan-950 text-cyan-300 border border-cyan-800">
+                Lanzamiento 2025 • Hardware Informativo
+            </span>
+            <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-white leading-tight">
+                Mudra Link: Control por <span class="text-cyan-400">Impulsos Nerviosos</span>
+            </h1>
+            <p class="text-slate-300 text-base leading-relaxed">
+                Mudra Link es una pulsera inteligente lanzada en 2025 que introduce un concepto completamente nuevo en la interacción digital. En lugar de depender de cámaras externas o botones físicos, incorpora sensores de Conducción Nerviosa de Superficie (SNC - Surface Nerve Conductance) que detectan la señal eferente que envía el cerebro a los dedos a través de la muñeca.
+            </p>
+            <div class="pt-2">
+                <a href="#galeria" class="inline-block px-6 py-3 rounded-lg bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-sm transition-all shadow-lg shadow-cyan-500/20">
+                    Ver Galería de Medios
+                </a>
+            </div>
+        </div>
+
+        <div class="flex-1 w-full flex justify-center">
+            <div class="relative w-full max-w-md rounded-2xl overflow-hidden border border-slate-700 bg-slate-900 shadow-2xl p-2">
+                <img src="contenido/images.jpeg" alt="Mudra Link Hardware Real" class="w-full h-auto rounded-xl object-cover">
+                <div class="p-3 bg-slate-900 border-t border-slate-800/80 text-center">
+                    <span class="text-xs text-cyan-400 font-medium">Pulsera Mudra Link con electrodos SNC visibles</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="galeria" class="py-12 bg-slate-900/60 border-y border-slate-800 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <h2 class="text-2xl md:text-3xl font-bold text-white mb-2">Galería del Dispositivo</h2>
+                <p class="text-slate-400 text-sm">Explora las imágenes reales del producto.</p>
+            </div>
+
+            
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-xl max-w-4xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    
+                    <div class="relative overflow-hidden rounded-xl bg-slate-950 aspect-4/3 flex items-center justify-center border border-slate-800">
+                        <img id="gallery-img" src="contenido/images.jpeg" alt="Mudra Link Hardware" class="object-contain w-full h-full p-2 transition-opacity duration-300">
+                    </div>
+
+                    <div class="space-y-4">
+                        <span id="media-badge" class="inline-block px-2.5 py-1 rounded bg-cyan-950 text-cyan-400 border border-cyan-800 text-xs font-semibold">
+                            Imagen 1 de 3
+                        </span>
+                        <h3 id="media-title" class="text-xl font-bold text-white">Dispositivo Mudra Link</h3>
+                        <p id="media-description" class="text-slate-300 text-sm leading-relaxed">
+                            Vista detallada de la pulsera inteligente Mudra Link. Se observan los sensores metálicos de Conducción Nerviosa de Superficie (SNC) en la cara interna, diseñados para captar los impulsos eléctricos de la muñeca.
+                        </p>
+
+                        
+                        <div class="pt-4 border-t border-slate-800 flex flex-wrap gap-2">
+                            <button onclick="selectMedia(0)" class="media-btn px-3 py-2 bg-cyan-500 text-slate-950 rounded-lg text-xs font-bold border border-cyan-400 transition-all">
+                                1. Dispositivo
+                            </button>
+                            <button onclick="selectMedia(1)" class="media-btn px-3 py-2 bg-slate-800 text-slate-300 rounded-lg text-xs font-bold border border-slate-700 transition-all hover:bg-slate-700">
+                                2. Microgestos
+                            </button>
+                            <button onclick="selectMedia(2)" class="media-btn px-3 py-2 bg-slate-800 text-slate-300 rounded-lg text-xs font-bold border border-slate-700 transition-all hover:bg-slate-700">
+                                3. Uso en Entorno
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="beneficios" class="py-12 px-4 max-w-6xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-10">
+            <h2 class="text-2xl md:text-3xl font-bold text-white mb-2">Beneficios del Dispositivo</h2>
+            <p class="text-slate-400 text-sm">Aportes fundamentales en la interacción hombre-máquina.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-slate-900 border border-slate-800 p-6 rounded-xl space-y-3 hover:border-cyan-500/50 transition-colors">
+                <div class="w-10 h-10 rounded-lg bg-cyan-950 text-cyan-400 flex items-center justify-center font-bold text-lg">01</div>
+                <h3 class="text-lg font-semibold text-slate-100">Cero Latencia Visual</h3>
+                <p class="text-slate-400 text-xs leading-relaxed">
+                    Al leer los impulsos nerviosos antes de que los músculos completen el movimiento visible, ofrece una velocidad de respuesta superior a las cámaras de seguimiento manual.
+                </p>
+            </div>
+
+            <div class="bg-slate-900 border border-slate-800 p-6 rounded-xl space-y-3 hover:border-cyan-500/50 transition-colors">
+                <div class="w-10 h-10 rounded-lg bg-cyan-950 text-cyan-400 flex items-center justify-center font-bold text-lg">02</div>
+                <h3 class="text-lg font-semibold text-slate-100">Funcionamiento Omnidireccional</h3>
+                <p class="text-slate-400 text-xs leading-relaxed">
+                    No depende de la línea de visión de ninguna cámara. Funciona con las manos en los bolsillos, debajo de una mesa o en movimiento sin perder señal.
+                </p>
+            </div>
+
+            <div class="bg-slate-900 border border-slate-800 p-6 rounded-xl space-y-3 hover:border-cyan-500/50 transition-colors">
+                <div class="w-10 h-10 rounded-lg bg-cyan-950 text-cyan-400 flex items-center justify-center font-bold text-lg">03</div>
+                <h3 class="text-lg font-semibold text-slate-100">Detección de Presión Proporcional</h3>
+                <p class="text-slate-400 text-xs leading-relaxed">
+                    Los sensores no solo registran el gesto, sino también la intención de fuerza ejercida por el usuario, permitiendo un control analógico gradual.
+                </p>
+            </div>
+        </div>
+    </section>
+
+  
+    <section id="evolucion" class="py-12 bg-slate-900/50 border-t border-slate-800 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-2xl md:text-3xl font-bold text-white text-center mb-2">Evolución e Historia de Dispositivos</h2>
+            <p class="text-slate-400 text-sm text-center mb-8">A qué dispositivos sustituye y cómo ha mejorado la tecnología de entrada.</p>
+
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse bg-slate-900 border border-slate-800 rounded-xl overflow-hidden text-xs md:text-sm">
+                    <thead>
+                        <tr class="bg-slate-800/80 text-cyan-400 font-semibold border-b border-slate-700">
+                            <th class="p-4">Dispositivo</th>
+                            <th class="p-4">Mecanismo de Interacción</th>
+                            <th class="p-4">Limitaciones Principales</th>
+                            <th class="p-4 text-cyan-300">Mejora que Aporta Mudra Link</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-800 text-slate-300">
+                        <tr>
+                            <td class="p-4 font-medium text-white">Ratón y Teclado</td>
+                            <td class="p-4">Contacto mecánico y movimiento físico sobre superficie</td>
+                            <td class="p-4">Requiere superficie plana y presencia física ante el equipo</td>
+                            <td class="p-4 text-cyan-300">Permite control sin superficie y en cualquier posición física</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-medium text-white">Guantes Hápticos / Mandos VR</td>
+                            <td class="p-4">Sensores de flexión mecánica y joysticks en la mano</td>
+                            <td class="p-4">Voluminosos, pesados y provocan fatiga tras uso continuado</td>
+                            <td class="p-4 text-cyan-300">Formato de pulsera ultra-ligera sin obstruir la mano</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-medium text-white">Cámaras (Hand Tracking)</td>
+                            <td class="p-4">Visión por ordenador y reconocimiento óptico de gestos</td>
+                            <td class="p-4">Sensible a mala iluminación y oclusiones fuera de campo</td>
+                            <td class="p-4 text-cyan-300">Lectura interna por electrodos, independiente de la luz o el campo visual</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+   
+    <footer class="bg-slate-950 border-t border-slate-800 py-8 text-center text-xs text-slate-400">
+        <div class="max-w-6xl mx-auto px-4 space-y-3">
+            <p class="font-medium text-slate-300">Mudra Link • Dispositivo de Conducción Nerviosa (2025)</p>
+            <p>
+                Para obtener información detallada y especificaciones oficiales del fabricante, visita: 
+                <a href="https://www.mudra-band.com" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline font-bold">www.mudra-band.com</a>
+            </p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

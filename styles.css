@@ -1,0 +1,18 @@
+/* Estilos personalizados para el sitio con soporte multimedia */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.media-btn {
+    transition: all 0.2s ease-in-out;
+}
+
+#gallery-img, #gallery-video {
+    transition: opacity 0.3s ease-in-out;
+}
+
+table {
+    border-radius: 0.75rem;
+    overflow: hidden;
+}
